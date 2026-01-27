@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software & Web Applications Guide</title>
+
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+      --code-bg: #f3f4f6;
+      --table-head: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.4rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 2rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    thead {
+      background: var(--table-head);
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      font-weight: 600;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    section {
+      background: var(--card);
+      padding: 1.5rem 2rem;
+      margin: 2rem 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+
+    pre {
+      background: var(--code-bg);
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+
+    code {
+      font-family: "Fira Code", Consolas, Monaco, monospace;
+      font-size: 0.95rem;
+    }
+
+    .note {
+      background: #eef6ff;
+      border-left: 4px solid var(--accent);
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+      color: #1e3a8a;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+<h1>List of Software and Web Applications</h1>
+<p style="text-align:center;">
+  To ensure compatibility and optimal performance, download and install the
+  latest version of each software unless a specific version is required.
+</p>
+
+<h2>Module 1: Introduction to Linux</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Software or Website</th>
+      <th>Operating System</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WSL</td>
+      <td>Windows</td>
+      <td><a href="https://learn.microsoft.com/en-us/windows/wsl/install" target="_blank">WSL Installation Guide</a></td>
+    </tr>
+    <tr>
+      <td>Default Terminal</td>
+      <td>Mac</td>
+      <td>Pre-installed</td>
+    </tr>
+    <tr>
+      <td>Terminal / Shell</td>
+      <td>Linux</td>
+      <td>Pre-installed</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Module 2: Next Generation Sequencing</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Software or Website</th>
+      <th>Operating System</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Java</td>
+      <td>All (including WSL)</td>
+      <td><a href="https://www.java.com/en/download/" target="_blank">Download Java</a></td>
+    </tr>
+    <tr>
+      <td>Homebrew</td>
+      <td>Mac</td>
+      <td><a href="https://brew.sh/" target="_blank">Homebrew</a></td>
+    </tr>
+    <tr>
+      <td>BWA</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="http://bio-bwa.sourceforge.net" target="_blank">BWA</a></td>
+    </tr>
+    <tr>
+      <td>GATK</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="https://gatk.broadinstitute.org/hc/en-us" target="_blank">GATK</a></td>
+    </tr>
+    <tr>
+      <td>FastP</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="https://github.com/OpenGene/fastp" target="_blank">FastP</a></td>
+    </tr>
+    <tr>
+      <td>FastQC</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/" target="_blank">FastQC</a></td>
+    </tr>
+    <tr>
+      <td>Picard</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="http://broadinstitute.github.io/picard/" target="_blank">Picard</a></td>
+    </tr>
+    <tr>
+      <td>SAMtools</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="http://samtools.sourceforge.net" target="_blank">SAMtools</a></td>
+    </tr>
+    <tr>
+      <td>Bcftools</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="https://samtools.github.io/bcftools/" target="_blank">Bcftools</a></td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="https://www.r-project.org/" target="_blank">R Project</a></td>
+    </tr>
+    <tr>
+      <td>RStudio</td>
+      <td>Windows (WSL), Mac, Linux</td>
+      <td><a href="https://posit.co/download/rstudio-desktop/" target="_blank">RStudio</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h2>Module 3: Genome-Wide Association Studies</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Software or Website</th>
+				<th>Operating System</th>
+				<th>URL</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>TASSEL</td>
+				<td>Windows (in WSL), Mac, Linux</td>
+				<td><a href="https://www.maizegenetics.net/tassel"
+					target="_blank">TASSEL Website</a></td>
+			</tr>
+			<tr>
+				<td>Plink 1.9</td>
+				<td>Windows (in WSL), Mac, Linux</td>
+				<td><a href="https://www.cog-genomics.org/plink/"
+					target="_blank">Plink Website</a></td>
+			</tr>
+			<tr>
+				<td>R</td>
+				<td>Windows (in WSL), Mac, Linux</td>
+				<td><a href="https://www.r-project.org/" target="_blank">R
+						Project Website</a></td>
+			</tr>
+			<tr>
+				<td>R-Studio</td>
+				<td>Windows (in WSL), Mac, Linux</td>
+				<td><a href="https://posit.co/download/rstudio-desktop/"
+					target="_blank">R-Studio Download</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+    <h2>Module 4: Post-GWAS</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Software or Website</th>
+				<th>Operating System</th>
+				<th>URL</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>SNP-Seek</td>
+				<td>Any web browser</td>
+				<td><a href="https://snpseek.irri.org/" target="_blank">SNP-Seek
+						Website</a></td>
+			</tr>
+			<tr>
+				<td>CropGalaxy</td>
+				<td>Any web browser</td>
+				<td><a href="http://cropgalaxy.excellenceinbreeding.org/"
+					target="_blank">CropGalaxy Website</a></td>
+			</tr>
+			<tr>
+				<td>RicePilaf</td>
+				<td>Any web browser</td>
+				<td><a href="https://ricepilaf.irri.org/" target="_blank">RicePilaf
+						Website</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+<section>
+  <h2>Additional Instructions: PLINK</h2>
+  <p>
+    Download PLINK from <a href="https://www.cog-genomics.org/plink/" target="_blank">here</a>.
+    Select the appropriate binary under <strong>Stable build</strong>.
+  </p>
+
+  <div class="note">
+    PLINK is a command-line executable and does not require installation into
+    Program Files.
+  </div>
+
+  <pre><code>.\plink.exe --help</code></pre>
+</section>
+
+<section>
+  <h2>R Packages (RStudio)</h2>
+  <ul>
+    <li><code>install.packages("qqman")</code></li>
+    <li><code>install.packages("ggplot2")</code></li>
+    <li><code>install.packages(c("dplyr","glue","reshape2"))</code></li>
+    <li><code>install.packages(c("readr","vroom","openxlsx"))</code></li>
+    <li><code>install.packages("BEDMatrix")</code></li>
+    <li><code>install.packages("BiocManager")</code></li>
+    <li><code>BiocManager::install("snpStats")</code></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Post-Installation Checks</h2>
+
+  <h3>Java</h3>
+  <pre><code>java -version</code></pre>
+
+  <h3>WSL (Windows only)</h3>
+  <pre><code>wsl --version
+wsl --list</code></pre>
+
+    <h3>RStudio</h3>
+		<p>
+			Open RStudio, and run the
+			<code>version</code>
+			command in the console.
+		</p>
+		<p>
+			Install the
+			<code>qqman</code>
+			package using the menu.
+		</p>
+
+        <h3>TASSEL</h3>
+		<p>Open TASSEL and use the tutorial dataset packaged within the
+			Tassel folder.</p>
+		<h3>Powershell/Terminal</h3>
+		<p>
+			Open PowerShell (Windows) or Terminal (Mac) and note the current
+			working directory by typing
+			<code>pwd</code>
+			then pressing Enter.
+		</p>
+	</section>
+</section>
+
+
+	<section>
+		<h2>Software Installation Guide</h2>
+		<h3>WSL2</h3>
+		<p>Helpful links:</p>
+		<ul>
+			<li><a
+				href="https://docs.microsoft.com/en-us/windows/wsl/install"
+				target="_blank">WSL Installation Guide</a></li>
+			<li><a href="https://docs.microsoft.com/en-us/windows/wsl/about"
+				target="_blank">About WSL</a></li>
+		</ul>
+		<p>Make sure Windows is up to date. It is recommended to run
+			Windows 10 version 2004 and higher (Build 1904 and higher) or Windows
+			11.</p>
+		<ol>
+			<li>Go to <em>Turn Windows feature on or off</em> in the Control
+				Panel.
+			</li>
+			<img border="0" width="414" height="339"
+				src="software-list.fld/image002.jpg" v:shapes="image12.png">
+			<li>Enable <em>Windows Subsystem for Linux</em> and <em>Virtual
+					Machine Platform</em>.
+			</li>
+			<img border="0" width="264" height="344"
+				src="software-list.fld/image004.jpg" v:shapes="image11.png">
+			<li>Restart the computer.</li>
+			<li>Download the latest WSL2 kernel <a href="#">here</a>.
+			</li>
+			<li>Follow the instructions in the link for installation.</li>
+		</ol>
+	</section>
+
+	<section>
+		<h2>Ubuntu Installation</h2>
+		<ol>
+			<li>Go to the Microsoft store and search for Ubuntu.</li>
+			<li>Install Ubuntu 24.04.1 LTS.</li>
+			<img border="0" width="402" height="218" src="software-list.fld/image006.jpg" v:shapes="_x0000_i1034">
+		</ol>
+	</section>
+
+	<section>
+		<h2>Software (Install in Ubuntu)</h2>
+		<h3>FastQC</h3>
+		<pre>
+			<code>sudo apt-get install fastqc</code>
+		</pre>
+		<h3>FastP</h3>
+		<pre>
+			<code>sudo apt-get install fastp</code>
+		</pre>
+		<h3>BWA</h3>
+		<pre>
+			<code>sudo apt-get install bwa</code>
+		</pre>
+		<h3>SAMtools</h3>
+		<pre>
+			<code>sudo apt-get install samtools</code>
+		</pre>
+		<h3>BCFtools</h3>
+		<pre>
+			<code>sudo apt install bcftools</code>
+		</pre>
+	</section>
+
+	<section>
+		<h2>JAVA Installation</h2>
+		<p>1. Download the latest package (JDK25) for <a href="https://www.oracle.com/java/technologies/downloads/#jdk25-linux" target="_blank">Linux</a> | <a href="https://www.oracle.com/java/technologies/downloads/#jdk25-mac" target="_blank">Mac</a> </p>
+		<br>
+		<p>OR just simply use wget (for Linux)</p>
+		<pre>
+			<code>wget https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz </code>
+		</pre>
+
+		<p>2. Place the file in your home directory or any directory you prefer (e.g., <code>/home/riza/</code>). </p>
+		<p>3. Unpack the tarball and set the environment variables as follows:</p>
+		
+		<pre>
+			<code>tar zxvf jdk-25_linux-x64_bin.tar.gz</code>
+		</pre>
+
+		<pre>
+			<code>nano ~/.bashrc</code>
+		</pre>
+
+		<p>5. Add the following lines to the end of your ~/.bashrc file  <i>(edit the code according to the location of the file on your machine).</i></p>
+		<pre>
+			<code>export JAVA_HOME='/home/riza/jdk-25.0.1'</code>
+		</pre>
+		<pre>
+			<code>export PATH=$JAVA_HOME/bin:$PATH</code>
+		</pre>
+
+		<p>6. Save and close the file. Once saved, have the current session read the file. </p>
+		<pre>
+			<code>source ~/.bashrc</code>
+		</pre>
+
+		<p>7. Verify installation:</p>
+		<pre>
+			<code>java -version</code>
+		</pre>
+
+		<p>You should see the version of Java installed.</p>
+
+	<code>java version "25.0.1" 2025-10-21 LTS <br>
+	Java(TM) SE Runtime Environment (build 25.0.1+8-LTS-27) <br>	
+	Java HotSpot(TM) 64-Bit Server VM (build 25.0.1+8-LTS-27, mixed mode, sharing)
+		</code>
+
+	</section>
+
+	<section>
+		<h2>PICARD Installation</h2>
+		<p>
+			1. Download the latest jar file <a
+				href="https://github.com/broadinstitute/picard/releases/download/3.4.0/picard.jar"
+				target="_blank">here</a> or use:
+		</p>
+		<pre>
+			<code>wget https://github.com/broadinstitute/picard/releases/download/3.4.0/picard.jar</code>
+		</pre>
+		<p>2. Place the file in your home directory or any directory you prefer (e.g., <code>/home/riza/</code>). </p>
+		<p>3. Set the environment variable:</p>
+		<pre>
+			<code>nano ~/.bashrc</code>
+		</pre>
+		<p>4. Add the following lines to the end of your ~/.bashrc file <i>(edit the code according to the location of the file on your machine)</i></p>
+		<pre>
+			<code>export PICARD='/home/riza/picard.jar'</code>
+		</pre>
+		<p>5. Save and close the file. Once saved, have the current session read the file. </p>
+	
+		<pre>
+			<code>source ~/.bashrc</code>
+		</pre>
+
+
+		<p>6. Verify installation:</p>
+		<pre>
+			<code>java -jar $PICARD</code>
+		</pre>
+
+		<p><i>Successful installation will display the PicardCommandLine usage message.</i></p>	
+		
+		
+	</section>
+
+	<section>
+		<h2>GATK4 Installation</h2>
+		<p>
+			1. Download the latest file <a
+				href="https://github.com/broadinstitute/gatk/releases"
+				target="_blank">here</a> or use:
+		</p>
+		
+		<pre>
+			<code>wget https://github.com/broadinstitute/gatk/releases/download/4.6.2.0/gatk-4.6.2.0.zip </code>
+		</pre>
+		<p>2. Place the file in your home directory or any directory you prefer (e.g., `/home/riza/`).</p>
+
+		<p>3. To use GATK, the full path to the <code>gatk-package-4.6.2.0-local.jar</code> needs to be specified in the command, in this case it looks like this:</p>
+
+		<pre>
+			<code>/home/riza/gatk-4.6.2.0/ gatk-package-4.6.2.0-local.jar</code>
+		</pre>	
+		
+		<p>4. Set the environment variable:</p>
+		<pre>
+			<code>nano ~/.bashrc</code>
+		</pre>
+		<p>5. Add the following lines to the end of your ~/.bashrc file <i>(edit the code according to the location of the file on your machine)</i></p>
+		<pre>
+			<code>export GATK='/home/riza/gatk-4.6.2.0/gatk-package-4.6.2.0-local.jar'</code>
+		</pre>
+		<p>6. Save and close the file. Once saved, have the current session read the file.</p>
+		<pre>
+			<code>source ~/.bashrc</code>
+		</pre>
+		<p>7. Verify installation:</p>
+		<pre>
+			<code>java -jar $GATK</code>
+		</pre>
+
+		<p><i>Successful installation will display the GATKCommandLine usage message.</i></p>
+	</section>
+
+	<section>
+	  <h4 style="font-size:120%">MacOS-specific</h4>
+
+  <ul style="list-style-type: disc;">
+    <li>Homebrew</li>
+      <ul>
+        <li>Follow installation instructions at the homepage of <a href="https://brew.sh/" target="_blank">Homebrew</a></li>
+        <li>Or on the Terminal app</li>
+          <ul><li style="font-family:'Courier New'">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</li></ul>
+
+        <li>Run these two commands in your terminal to add Homebrew to your PATH:</li>
+          <ul>
+            <li style="font-family:'Courier New'">(echo; echo 'eval "$(/usr/local /bin/brew shellenv)"')</li>
+            <li style="font-family:'Courier New'">eval "$(/usr/local/bin/brew shellenv)"</li>
+          </ul>
+      </ul>
+    <li>In the terminal app</li>
+      <ul style="font-family:'Courier New'">
+        <li>brew install bwa</li>
+        <li>brew install fastp</li>
+        <li>brew install fasqc</li>
+        <li>brew install samtools</li>
+        <li>brew install bcftools</li>
+        <li>brew install picard-tools</li>
+      </ul>
+  </ul>	
+	</section>
+
+
+<footer>
+  © 2026 • Software Installation Guide
+</footer>
+
+</main>
+</body>
+</html>
